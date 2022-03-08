@@ -1,0 +1,8 @@
+def recu(n,sum1):
+    if n==0:
+        print(sum1)
+        return
+    else:    
+    return recu(n-1,sum1+n)
+
+print(recu(5,0))
