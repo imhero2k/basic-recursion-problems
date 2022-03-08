@@ -1,0 +1,10 @@
+def recu(n,sum1):
+    if n<0:
+        print(sum1)
+        return    
+    return recu(n-2,sum1+n)
+n=10
+if n%2==0:
+    recu(n,0)
+else:
+    rec(n-1,0)
