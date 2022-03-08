@@ -1,0 +1,8 @@
+def recu(arr,n):
+    if n==0:
+        return
+    else:
+        print(arr[n-1])
+    return recu(arr,n-1)
+arr=[1,2,3,4,5]
+recu(arr,len(arr))
