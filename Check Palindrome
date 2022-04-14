@@ -1,0 +1,18 @@
+class Solution{
+  public:
+    int rev(string s,int start,int end)
+    {
+        if(start>=end)
+        {
+            return 1;
+        }
+        return s[start]==s[end] && rev(s,start+1,end-1);
+        
+    }
+    bool isPalin(int n)
+    {
+       std::string s = std::to_string(n);
+       return rev(s,0,s.length()-1); 
+
+    }
+};
